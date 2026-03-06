@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    height: 50px;
+    background-color: #067f00;
+}
+
+main {
+    background-color: #dadadaeb;
+    height: 90vh;
+}
+
+em {
+    margin-top: -5px;
+    margin-left: 70px;
+    color: #ffffff;
+}
+
+b {
+    margin-top: -5px;
+    margin-left: 4px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.burger-menu {
+    position: relative;
+}
+
+.burger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+.menu-panel {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #ffffff;
+    height: 90vh;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.menu-panel.active {
+    display: block;
+}
+
+.burger-icon.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-icon.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+ul {
+    list-style-type: none; /* Убирает маркеры списка */
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit; /* Цвет ссылки такой же, как у обычного текста */
+    background: none;
+    border: none;
+    text-decoration: none; /* Убирает подчеркивание у ссылок */
+}
+
+.a2 {
+    color: blue; /* Цвет ссылки такой же, как у обычного текста */
+    background: none;
+    border: none;
+    text-decoration: none; /* Убирает подчеркивание у ссылок */
+}
+
+form {
+    margin-left: 280px;
+    margin-top: -25px;
+}
+
+.qwe {
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.qwe2 {
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 4px;
+    width: 400px;
+    padding: 20px;
+}
+
+.qwe3 {
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 4px;
+    width: 400px;
+    padding: 20px;
+    margin-top: -198px;
+    margin-left: 500px;
+}
+
+.qwe4 {
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 4px;
+    width: 400px;
+    padding: 20px;
+    margin-top: -198px;
+    margin-left: 1000px;
+}
+
+.qwe5 {
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 4px;
+    width: 400px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+
+.qwe6 {
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 4px;
+    width: 400px;
+    padding: 20px;
+    margin-top: -120px;
+    margin-left: 500px;
+}
+
+.qwe7 {
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 4px;
+    width: 110vh;
+    height: 20vh;
+    padding: 20px;
+}
+
+#search-results ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#search-results li:last-child {
+    border-bottom: none;
+    background-color: #ffffff;
+}
+
+#search-results a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: block;
+}
+
+#search-results a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modal.hidden {
+    display: none;
+}
+
+#modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#modal-content h2 {
+    margin-bottom: 20px;
+}
+
+#modal-content textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#modal-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#modal-content button:hover {
+    background-color: #0056b3;
+}
+
+#file-actions {
+    position: absolute; /* Позволяет разместить блок в определенной позиции */
+    top: 10px; /* Отступ сверху */
+    right: 10px; /* Отступ справа */
+    z-index: 1000; /* Устанавливаем высокий приоритет отображения */
+}
+
+#file-actions button {
+    background-color: radial-gradient(circle at right, #f42424, #fff700);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 90px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#file-actions button:hover {
+    background-color: #8b8b8b;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+
+
+footer {
+    padding: 20px;
+    height: 50px;
+    background-color: #067f00;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+}
+
+.Apple {
+    height: 90vh;
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 4px;
+    width: 400px;
+    padding: 20px;
+    margin-left: 12px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Языки Nexus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="burger-menu">
+     
+        <div class="burger-icon" onclick="Menu();">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+ 
+        <div class="menu-panel">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <hr>
+            <li><a href="языки.html">Языки<a></li>
+            <hr>
+            <br>
+            <img src="unnamed.GIF" alt="" class="logo">
+          </ul>
+        </div>
+ 
+      </div>
+      <em>Искать на</em><b>Nexus</b>
+ 
+          <form onsubmit="searchFiles(event)">
+            <input type="text" name="search" id="search" placeholder="Поиск по Nexus">
+            <button type="submit">Искать</button>
+          </form>
+          <div id="search-results"></div>
+ 
+          <div id="file-actions">
+            <button id="create-article" onclick="createArticle()">Создать статью</button>
+            <button id="edit-article" onclick="editArticle()">Редактировать</button>
+        </div>
+ 
+        <div id="modal" class="hidden">
+            <div id="modal-content">
+                <h2 id="modal-title"></h2>
+                <textarea id="article-content" placeholder="Введите текст статьи..."></textarea>
+                <button id="save-article" onclick="saveArticle()">Сохранить</button>
+                <button id="close-modal" onclick="closeModal()">Закрыть</button>
+            </div>
+        <div id="search-results"></div>
+    </header>
+
+    <main>
+      <h1>Языки</h1>
+      <p>На Nexus доступны статьи на следующих языках:</p>
+      <p><a href="" class="a2">Español: 15 artículos</a></p>
+      <p><a href="" class="a2">English: 14 articles</a></p>
+      <p><a href="" class="a2">Русский: 14 статьей</a></p>
+      <p><a href="" class="a2">Français: 8 articles</a></p>
+      <p><a href="" class="a2">Deutsch: 5 Artikel</a></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

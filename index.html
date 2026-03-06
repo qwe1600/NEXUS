@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="burger-menu">
+        
+            <div class="burger-icon" onclick="Menu();">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+    
+            <div class="menu-panel">
+              <ul>
+                <li><a href="index.html">Главная</a></li>
+                <hr>
+                <li><a href="языки.html">Языки<a></li>
+                <hr>
+                <br>
+                <img src="unnamed.GIF" alt="" class="logo">
+              </ul>
+            </div>
+    
+          </div>
+          <em>Искать на</em><b>Nexus</b>
+
+          <form onsubmit="searchFiles(event)">
+            <input type="text" name="search" id="search" placeholder="Поиск по Nexus">
+            <button type="submit">Искать</button>
+          </form>
+          <div id="search-results"></div>
+
+          <div id="file-actions">
+            <button id="create-article" onclick="createArticle()">Создать статью</button>
+            <button id="edit-article" onclick="editArticle()">Редактировать</button>
+        </div>
+
+        <div id="modal" class="hidden">
+            <div id="modal-content">
+                <h2 id="modal-title"></h2>
+                <textarea id="article-content" placeholder="Введите текст статьи..."></textarea>
+                <button id="save-article" onclick="saveArticle()">Сохранить</button>
+                <button id="close-modal" onclick="closeModal()">Закрыть</button>
+            </div>
+        <div id="search-results"></div>
+    </header>
+
+    <main>
+        <br>
+        <div class="qwe">
+            <strong>Nexus</strong> — это открытая и доступная каждому интернет-энциклопедия, Проект направлен на создание глобальной базы знаний, в которой пользователи могут свободно искать, редактировать и добавлять информацию. Мы стремимся к тому, чтобы знания были не только точными и актуальными, но и представленными в удобной и понятной форме.
+        </div>
+        <br>
+        <div class="qwe2">
+            <p><strong>Nexus</strong> предоставляет свободный доступ к статьям <p>по самым разным темам — от науки и технологий<p> до искусства и истории. Любой человек может<p> воспользоваться ресурсом, независимо от места <p>проживания и уровня образования. Мы призываем<p> всех желающих присоединиться к проекту и помочь<p> сделать мир более образованным и информированным.</p>
+        </div>
+
+        <div class="qwe3">
+            <p>Каждый пользователь может вносить свой вклад,<p> создавая и редактируя статьи. Мы верим, что <p>коллективное сотрудничество ведёт к созданию<p> качественного и достоверного контента. <p> Создавайте статьи, редактируйте существующие, <p>добавляйте ссылки и иллюстрации. <p>Вместе мы сможем сделать <strong>Nexus</strong> лучше!</p>
+        </div>
+
+        <div class="qwe4">
+            <p>Мы планируем добавить возможности для<p> обсуждения статей, чтобы пользователи могли <p>делиться мнениями, задавать вопросы и уточнять<p> информацию.</p>
+        </div>
+
+        <div class="qwe5">
+            <p>Присоединяйтесь к <strong>Nexus</strong> и помогите нам<p> создать самую полную и достоверную<p> интернет-энциклопедию!</p>
+        </div>
+
+        <div class="qwe6">
+            <p><strong>Nexus</strong> разрабатывается с учётом удобства исполь- <p>зования на любых устройствах — от настольных <p>компьютеров до смартфонов.</p>
+        </div>
+    </main>
+
+    <footer><strong>Присоединяйся к Nexus — вместе создадим энциклопедию будущего!</strong></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

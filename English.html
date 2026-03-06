@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Англиский язык</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="burger-menu">
+         
+            <div class="burger-icon" onclick="Menu();">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+     
+            <div class="menu-panel">
+              <ul>
+                <li><a href="index.html">Главная</a></li>
+                <hr>
+                <li><a href="языки.html">Языки<a></li>
+                <hr>
+                <br>
+                <img src="unnamed.GIF" alt="" class="logo">
+              </ul>
+            </div>
+     
+          </div>
+          <em>Искать на</em><b>Nexus</b>
+ 
+          <form onsubmit="searchFiles(event)">
+            <input type="text" name="search" id="search" placeholder="Поиск по Nexus">
+            <button type="submit">Искать</button>
+          </form>
+          <div id="search-results"></div>
+ 
+          <div id="file-actions">
+            <button id="create-article" onclick="createArticle()">Создать статью</button>
+            <button id="edit-article" onclick="editArticle()">Редактировать</button>
+        </div>
+ 
+        <div id="modal" class="hidden">
+            <div id="modal-content">
+                <h2 id="modal-title"></h2>
+                <textarea id="article-content" placeholder="Введите текст статьи..."></textarea>
+                <button id="save-article" onclick="saveArticle()">Сохранить</button>
+                <button id="close-modal" onclick="closeModal()">Закрыть</button>
+            </div>
+        <div id="search-results"></div>
+    </header>
+
+    <main>
+        <div class="qwe7">
+            <strong>Nexus</strong> is an open and accessible online encyclopedia, <p>the project is aimed at creating a global knowledge base <p> in which users can freely search, edit and add information. <p> We strive to ensure that the knowledge is not only accurate and relevant,<p> but also presented in a convenient and understandable form. </p>
+        </div>
+        <br>
+        <div class="qwe8">
+            <strong>English</strong> is a West Germanic language that was first spoken in early medieval England and eventually became a global lingua franca. It is named after the Angles, one of the ancient Germanic peoples that migrated to the area of Great Britain that later took their name, England. Both names derive from Anglia, a peninsula on the Baltic Sea. The language is closely related to Frisian and Low Saxon, and its vocabulary has been significantly influenced by other Germanic languages, particularly Norse (a North Germanic language), as well as by Latin and French.
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
